@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../image/home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #000000;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.logo{
+    width: 175px;
+    cursor: pointer;
+    padding-left: 50px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    padding-right: 50px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ABD8FF;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height :3px;
+    width: 0px;
+    background: #ABD8FF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.navbar ul li:hover::after{
+    width: 60%;
+}
+
+.content {
+    padding: 50px;
+    color: #DEF0FF;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+
+.content .task-info {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.task-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.task-box {
+    background-color: rgba(23, 95, 149, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #DEF0FF;
+    text-align: left;
+}
+
+.task-box h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.task-box p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.view-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #175F95;
+    color: #DEF0FF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.view-button:hover {
+    background-color: #0F4568;
+}
+
+/* Add new CSS classes for the progress circle */
+.progress-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.progress-circle .progress-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
